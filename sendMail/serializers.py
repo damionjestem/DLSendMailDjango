@@ -4,4 +4,4 @@ from .models import sendMail
 class MailSerializer(serializers.ModelSerializer):
     class Meta:
         model = sendMail
-        fields = ('id', 'name', 'paradigm')
+        fields = ('id', 'email', 'rss')
