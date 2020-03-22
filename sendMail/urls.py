@@ -2,9 +2,9 @@ from django.urls import path, include
 from . import views
 from rest_framework import routers
 
-router = routers.DefaultRouter()
-router.register('mails', views.MailView)
+ROUTER = routers.DefaultRouter()
+ROUTER.register('sendMails', views.MailView)
 
 urlpatterns = [
-    path('', include(router.urls))
+    path('', include(ROUTER.urls))
 ]
